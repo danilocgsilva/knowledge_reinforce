@@ -1,0 +1,14 @@
+services:
+  knowledge_reinforce:
+    build:
+      context: .
+    container_name: knowledge_reinforce
+    environment:
+      - DB_NAME=knowledge_reinforce
+  knowledge_reinforce_db:
+    image: 'mysql:latest'
+    container_name: knowledge_reinforce_db
+    environment:
+      - MYSQL_ROOT_PASSWORD=strongpassword
+    ports:
+      - '3684:3306'

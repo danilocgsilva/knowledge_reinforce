@@ -5,6 +5,11 @@ services:
     container_name: knowledge_reinforce
     environment:
       - DB_NAME=knowledge_reinforce
+      - DB_HOST=knowledge_reinforce_db
+      - DB_USER=root
+      - DB_PASSWORD=strongpassword
+    volumes:
+      - ./app:/app
   knowledge_reinforce_db:
     image: 'mysql:latest'
     container_name: knowledge_reinforce_db

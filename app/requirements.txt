@@ -1,0 +1,7 @@
+SQLAlchemy
+Alembic
+mysql-connector-python
+python-dotenv
+flake8
+black
+pymysql

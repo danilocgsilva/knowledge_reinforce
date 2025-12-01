@@ -5,13 +5,10 @@ from logging.config import fileConfig
 from sqlalchemy import engine_from_config, pool
 from alembic import context
 
-from models import Base  # <-- the DeclarativeBase subclass that holds all metadata
-
-
+from models import Base
 
 target_metadata = Base.metadata
 
-# DATABASE_URL = os.getenv("DATABASE_URL")
 db_user = os.environ.get("DB_USER")
 db_password = os.environ.get("DB_PASSWORD")
 db_host = os.environ.get("DB_HOST")
@@ -39,11 +36,10 @@ def run_migrations_offline() -> None:
 
 def run_migrations_online() -> None:
     """Run migrations in 'online' mode."""
-    # Create an Engine using the URL from env var
     connectable = engine_from_config(
         config.get_section(config.config_ini_section),
         prefix="sqlalchemy.",
-        url=DATABASE_URL,          # <-- override any config value
+        url=DATABASE_URL,
         poolclass=pool.NullPool,
     )
 

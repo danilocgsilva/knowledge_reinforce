@@ -5,3 +5,4 @@ app/migrations/versions/**/*
 app/knowledge_reinforce/__pycache__/**/*
 app/knowledge_reinforce/migrations/__pycache__/**/*
 app/knowledge_reinforce/migrations/versions/__pycache__/**/*
+app/knowledge_reinforce/models/__pycache__/**/*

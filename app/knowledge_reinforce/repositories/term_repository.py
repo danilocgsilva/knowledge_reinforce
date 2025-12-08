@@ -19,3 +19,4 @@ class TermRepository(BaseRepository[Term]):
         """Get all terms."""
         return super().get_all()
 
+

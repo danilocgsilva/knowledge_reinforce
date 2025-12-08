@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, Table, ForeignKey
-from database import DeclarativeBase
+from sqlalchemy.orm import DeclarativeBase
 
 class Base(DeclarativeBase):
     pass

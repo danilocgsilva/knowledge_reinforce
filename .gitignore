@@ -7,3 +7,5 @@ app/knowledge_reinforce/migrations/__pycache__/**/*
 app/knowledge_reinforce/migrations/versions/__pycache__/**/*
 app/knowledge_reinforce/models/__pycache__/**/*
 app/tests/__pycache__/test_MyTest.cpython-311.pyc
+app/knowledge_reinforce/repositories/__pycache__/*
+app/tests/__pycache__/*

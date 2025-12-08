@@ -15,3 +15,4 @@ class ClassRepository(BaseRepository[Class]):
         """Get all classes."""
         return super().get_all()
 
+
